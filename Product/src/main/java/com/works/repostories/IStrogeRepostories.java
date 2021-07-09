@@ -1,6 +1,6 @@
 package com.works.repostories;
 
-import com.works.models.entities.Stroge;
+import com.works.models.entities.models.Stroge;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

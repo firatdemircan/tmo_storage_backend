@@ -1,7 +1,7 @@
 package com.works.models.mapper.interfaces;
 
 import com.works.models.dtos.ProductDto;
-import com.works.models.entities.Product;
+import com.works.models.entities.models.Product;
 
 import java.util.List;
 

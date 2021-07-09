@@ -1,6 +1,6 @@
 package com.works.models.dtos;
 
-import com.works.models.entities.StrogeDetail;
+import com.works.models.entities.models.StrogeDetail;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

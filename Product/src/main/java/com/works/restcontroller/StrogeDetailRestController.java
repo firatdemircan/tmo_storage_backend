@@ -15,6 +15,9 @@ public class StrogeDetailRestController {
         this.istrogeDetailService = istrogeDetailService;
     }
 
+    /*
+    TODO :ürüne göre bir depo açmak istediğimiz alan
+    */
     @PostMapping("/save")
     public Result<StrogeDetailDto> save(@RequestBody StrogeDetailDto strogeDetailDto){
         strogeDetailDto.setDoluluk(0.0f);
@@ -22,12 +25,18 @@ public class StrogeDetailRestController {
         return result;
     }
 
+    /*
+    TODO :açık olan depoyu getirmek istediğimiz alan
+    */
     @GetMapping("/getById/{id}")
     public Result<StrogeDetailDto> getById(@PathVariable(value="id") int id){
         Result result= istrogeDetailService.getById(id);
         return result;
     }
 
+    /*
+    TODO :bütün depoları getirmek istediğimiz alan
+    */
     @GetMapping("/getAll")
     public Result<StrogeDetailDto> getAll(){
         Result result= istrogeDetailService.getAll();

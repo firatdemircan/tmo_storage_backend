@@ -1,8 +1,8 @@
 package com.works.models.dtos;
 
-import com.works.models.entities.Product;
-import com.works.models.entities.Stroge;
-import com.works.models.entities.StrogeAction;
+import com.works.models.entities.models.Product;
+import com.works.models.entities.models.Stroge;
+import com.works.models.entities.models.StrogeAction;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

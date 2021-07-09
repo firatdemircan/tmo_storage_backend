@@ -1,10 +1,7 @@
 package com.works.models.dtos;
 
-import com.works.models.entities.StrogeDetail;
-import com.works.models.enums.IslemTipi;
+import com.works.models.entities.enums.IslemTipi;
 import lombok.*;
-
-import javax.persistence.Entity;
 
 @Data
 @AllArgsConstructor

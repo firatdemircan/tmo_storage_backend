@@ -1,15 +1,21 @@
 package com.works.services.implemention;
 
 import com.works.models.dtos.ProductDto;
-import com.works.models.entities.Product;
+import com.works.models.entities.models.Product;
 import com.works.repostories.IProductRepostories;
 import com.works.services.abstracts.IProductService;
 import com.works.utils.Result;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.domain.Example;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 @Service
 public class ProductService implements IProductService {
@@ -22,8 +28,31 @@ public class ProductService implements IProductService {
         this.modelMapper = modelMapper;
     }
 
+//specifications
+
+
+//specifications
+
     @Override
     public Result<ProductDto> Save(ProductDto productDto) {
+        /*
+            TODO : using specifitaions
+
+
+        List<Product> products = iProductRepostories.findAll(new Specification<Product>(){
+            @Override
+            public Predicate toPredicate(Root<Product> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder){
+
+                Predicate p = criteriaBuilder.conjunction();
+
+
+                return null;
+            }
+        });
+   */
+
+
+
         return new Result<>(true,"kaydedildi",modelMapper.map(iProductRepostories.save(modelMapper.map(productDto,Product.class)),ProductDto.class));
     }
 

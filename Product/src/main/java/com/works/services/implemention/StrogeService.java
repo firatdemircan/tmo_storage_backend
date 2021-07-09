@@ -1,7 +1,7 @@
 package com.works.services.implemention;
 
 import com.works.models.dtos.StorageDto;
-import com.works.models.entities.Stroge;
+import com.works.models.entities.models.Stroge;
 import com.works.repostories.IStrogeRepostories;
 import com.works.services.abstracts.IStrogeService;
 import com.works.utils.Result;

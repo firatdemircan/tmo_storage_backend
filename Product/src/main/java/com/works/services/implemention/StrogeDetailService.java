@@ -2,9 +2,9 @@ package com.works.services.implemention;
 
 import com.works.models.dtos.StrogeActionDto;
 import com.works.models.dtos.StrogeDetailDto;
-import com.works.models.entities.StrogeAction;
-import com.works.models.entities.StrogeDetail;
-import com.works.models.enums.IslemTipi;
+import com.works.models.entities.models.StrogeAction;
+import com.works.models.entities.models.StrogeDetail;
+import com.works.models.entities.enums.IslemTipi;
 import com.works.repostories.IStrogeActionRepostories;
 import com.works.repostories.IStrogeDetailRepostories;
 import com.works.repostories.IStrogeRepostories;

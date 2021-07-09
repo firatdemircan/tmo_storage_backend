@@ -5,6 +5,7 @@ import com.works.services.abstracts.IProductService;
 import com.works.utils.Result;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/product")
 public class ProductRestController {
@@ -16,7 +17,7 @@ public class ProductRestController {
     }
 
     @PostMapping("/save")
-    public Result<ProductDto> save(@RequestBody ProductDto productDto){
+    public Result<ProductDto> save(@RequestBody  ProductDto productDto){
         Result result= iproductService.Save(productDto);
         return result;
     }
