@@ -1,8 +1,7 @@
 package com.works.repostories;
 
 import com.works.models.dtos.StrogeActionDto;
-import com.works.models.entities.models.Product;
-import com.works.models.entities.models.StrogeAction;
+import com.works.models.entities.StrogeAction;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

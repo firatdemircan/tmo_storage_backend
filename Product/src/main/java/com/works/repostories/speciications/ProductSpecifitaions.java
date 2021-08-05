@@ -1,6 +1,6 @@
 package com.works.repostories.speciications;
 
-import com.works.models.entities.models.Product;
+import com.works.models.entities.Product;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 
